@@ -1,12 +1,90 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/ebede8e233.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>WireframeProject</title>
+    <link rel="stylesheet" href="src/weatherapp.css" />
+  </head>
+  <body>
+    <div class="parallelogram">
+      <span class="weather-input" &degC> </span>
+      <p id="name" class="name">Philadelphia</p>
+      <ul>
+        <span>Temperature: <span id="temperature"></span>&degC</span>
+        <br />
+        <span>Humidity: <span id="humidity"></span>%</span>
+        <br />
+        <span>Wind: <span id="wind"></span> km/h</span>
+        <br />
+        <span> Description: <span id="description"></span></span>
+      </ul>
+
+      <p class="time" id="formateDate">Mon Oct 17, 2022 12:11</p>
+
+      <div class="container">
+        <div class="row">
+          <div id="cloudy" class="col-3">
+            <br />
+            <p>71°C</p>
+            Mon
+          </div>
+
+          <div id="sunny" class="col-3">
+            <br />
+            <p>83°C</p>
+            Tue
+          </div>
+
+          <div id="rainy" class="col-3">
+            <br />
+            <p>63°C</p>
+            Wed
+          </div>
+
+          <div id="thunder" class="col-3">
+            <br />
+            <p>51°C</p>
+            Thu
+          </div>
+        </div>
+      </div>
+
+      <div class="cities">
+        <div class="row">
+          <div class="col-3">Tokyo</div>
+          <div class="col-3">London</div>
+          <div class="col-3">Lome</div>
+          <div class="col-3">Miami</div>
+        </div>
+      </div>
+      <br />
+      <form class="search" id="search-form">
+        <input
+          type="text"
+          placeholder="SEARCH-ENGINE"
+          autocomplete="off"
+          autofocus="on"
+          id="city-names"
+        />
+        <input type="Submit" value="Search" />
+      </form>
+      <button id="current-location" class="current-location" type="submit">
+        Current
+      </button>
+    </div>
+
+    <script src="src/weatherapp.js"></script>
+  </body>
 </html>
