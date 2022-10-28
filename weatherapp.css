@@ -79,3 +79,10 @@ ul {
   opacity: 0.9;
   cursor: pointer;
 }
+
+.footer{
+  position:fixed;
+  top: 72%;
+  right: 13%;
+  font-size: 15px;
+}
