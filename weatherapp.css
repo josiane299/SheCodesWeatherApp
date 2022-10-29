@@ -84,7 +84,7 @@ ul {
   text-align: center;
   font-size: 12px;
   position: fixed;
-  bottom: 180px;
+  bottom: 140px;
   left: 50%;
   transform: translateX(-50%);
 }
