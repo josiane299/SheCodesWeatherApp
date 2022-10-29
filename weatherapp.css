@@ -80,9 +80,11 @@ ul {
   cursor: pointer;
 }
 
-.footer{
-  position:fixed;
-  top: 72%;
-  right: 13%;
-  font-size: 15px;
+.footer {
+  text-align: center;
+  font-size: 12px;
+  position: fixed;
+  bottom: 240px;
+  left: 50%;
+  transform: translateX(-50%);
 }
